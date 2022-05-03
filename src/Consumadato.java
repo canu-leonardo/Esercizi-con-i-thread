@@ -11,7 +11,7 @@ public class Consumadato extends Thread{
     public void run(){
         while(ProduciDato.NonHaFinito){
             pieno.P();
-            dato = App.buffer;
+            dato = App.buffer.getValore();
             System.out.println("Lettore: dato letto: " + dato);
             vuoto.V();
         }

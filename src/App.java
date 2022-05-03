@@ -1,5 +1,5 @@
 public class App {
-    public static int buffer;
+    public static Contatore buffer = new Contatore(0, 1;
     public static void main(String[] args) throws Exception {
         Semaforo pieno = new Semaforo(0);
         Semaforo vuoto = new Semaforo(1);
