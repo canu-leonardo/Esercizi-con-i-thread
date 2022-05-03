@@ -1,15 +1,15 @@
-public class Consumadato extends Thread{
+public class Consumatore extends Thread{
     Semaforo pieno;
     Semaforo vuoto;
     int dato;
 
-    public Consumadato(Semaforo s1, Semaforo s2){
+    public Consumatore(Semaforo s1, Semaforo s2){
         this.pieno = s1;
         this.vuoto = s2;
     }
 
     public void run(){
-        while(ProduciDato.NonHaFinito){
+        while(Produttore.NonHaFinito){
             pieno.P();
             dato = App.buffer.getValore();
             System.out.println("Lettore: dato letto: " + dato);

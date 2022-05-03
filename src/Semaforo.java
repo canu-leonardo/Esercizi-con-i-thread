@@ -1,8 +1,8 @@
 public class Semaforo {
     int valore;
 
-    public Semaforo(int v){
-        this.valore = v;
+    public Semaforo(int valore){
+        this.valore = valore;
     }
 
     synchronized public void P(){

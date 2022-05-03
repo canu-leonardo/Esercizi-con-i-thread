@@ -18,4 +18,8 @@ public class Contatore {
     public int getValore(){
         return valore;
     }
+
+    public void raddoppia(){
+        valore = valore * 2;
+    }
 }
