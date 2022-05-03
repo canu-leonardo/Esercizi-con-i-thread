@@ -9,7 +9,7 @@ public class Consumadato extends Thread{
     }
 
     public void run(){
-        while(true){
+        while(ProduciDato.NonHaFinito){
             pieno.P();
             dato = App.buffer;
             System.out.println("Lettore: dato letto: " + dato);
